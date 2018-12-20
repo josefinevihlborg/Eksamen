@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+* {
+	margin: 0; 
+	padding: 0;  
+}
+
+.wrapper {
+	width: 80%; 
+	margin: auto; 
+}
+
+nav {
+	border-bottom: 1px solid #FFDC9C;
+	border-top: 1px solid #FFDC9C; 
+	width: auto;
+	padding: 5px; 
+	margin: auto; 
+	display: block;
+	text-align: center;
+	margin-top: 40px; 
+	margin-bottom: 5px;
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+
+#navigation li { 
+	list-style: none; 
+	display: inline; 
+	line-height: 1.5; 
+	letter-spacing: 3px; 
+	font-weight: normal;  
+	font-size: 15px;
+	padding: 20px;
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+#navigation a { /* her påvirkes linket */
+	margin: 0px 15px -1px 15px; 
+	font-family: "Helvetica", Arial, "sans-serif";  
+	text-decoration: none; /* her fjernes understregningen */
+	color: #FDA300; 
+	padding: 5px 1px; /* rækkefølge: top, højre, bund, venstre (uret rundt) */
+	border-radius: 0px; 
+	display: inline-block; 
+	width: 100px;  
+	text-align: center;  
+}
+	
+#navigation a:hover {
+	color: #979797; 
+}
+
+/* styling af det første link alene */
+#navigation a:first-of-type {
+	margin-left: 0; 
+}
+
+h1 {
+	letter-spacing: 7px; 
+	line-height: 1.5; 
+	font-size: 20px; 
+	font-weight: normal; 
+	margin-top: 70px; 
+	text-align: center; 
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+h2 {
+	margin-top: 100px;
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+body {
+	background-color: white;   
+}
+
+
+.omkring-design-kodning {
+	display: flex; 
+	justify-content: space-between; 
+	font-size: 18px; 
+	 
+}
+
+.omkring-design-kodning div {
+	margin: 0; 
+}
+
+.omkring-design-kodning img {
+	margin-top: 50px;  
+}
+
+h3 {
+	font-size: 18px; 
+	font-weight: normal;
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+.about-me {
+	font-family: arial, sans-serif; 
+}
+
+.about-me h1 {
+	font-size: 45px; 
+	font-weight: bold; 
+	letter-spacing: 0px; 
+	text-align: left; 
+	margin-left: 50%; 
+	margin-top: 7%; 
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+.about-me h2 {
+	font-weight: normal;
+	margin-left: 50%;   
+	margin-top: 15px;
+	font-size: 25px;
+	color: #878787; 
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+.about-me h3 {
+	width: 450px; 
+	font-size: 15px; 
+	display: block; 
+	margin-top: 25px; 
+	margin-left: 50%; 
+	letter-spacing: 1.0px; 
+	line-height: 2.0;
+	color: #878787;
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+.about-me img {
+	margin-left: 13%;
+	margin-bottom: 200px;  
+	margin-top: -425px; 
+}
+
+
+
+/* Min projekt-side */
+
+.projects h1 {
+	display: flex; 
+	justify-content: space-between;
+	letter-spacing: 2.0px; 
+	margin-top: 70px; 
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+.projects {
+	width: 100%; 
+}
+
+.projects img {
+	width: 33%;
+	height: 320px;  
+	display: inline;  
+}
+
+.projects2 img {
+	width: 33%; 
+	height: 320px; 
+	display: inline; 
+}
+
+.projects2 h1 {
+	display: flex; 
+	justify-content: space-between;
+	letter-spacing: 2.0px; 
+	margin-top: 70px; 
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+
+
+
+/* Contact-form */
+
+
+body {
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+* {
+	box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid orange;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+input[type=submit] {
+    background-color: orange;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	font-family: "Helvetica", Arial, "sans-serif"; 
+	font-size: 15px; 
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: none;
+    padding: 70px;
+	margin: 0px; 
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+.container {
+	width: 50%;
+	margin-left: 25%; 
+	margin-bottom: 150px; 
+	font-family: "Helvetica", Arial, "sans-serif"; 
+}
+
+
+
+/* Min Footer */
+
+.footer {
+	width: 100%; 
+	height: 50px; 
+	background-color: #FFC357; 
+	text-align: left; 
+	padding: 15px; 
+	margin-top: 100px; 
+}
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

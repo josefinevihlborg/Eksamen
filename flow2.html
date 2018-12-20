@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flow 2</title>
+<link rel="stylesheet" href="styleportfolio.css">
+</head>
+
+<body>
+	<a href="index.html"><img src="logo/mitlogo1.png" alt="logo" class="logo"></a>
+	
+	<div class="container">
+		<nav>	
+			<ul>
+				<li><a>PROJEKTER</a>
+					<ul>
+						<li><a href="flow1.html">FLOW 1</a></li>
+						<li><a href="flow2.html">FLOW 2</a></li>
+						<li><a href="flow3.html">FLOW 3</a></li>
+						<li><a href="flow4.html">FLOW 4</a></li>
+						<li><a href="flow5.html">FLOW 5</a></li>
+					</ul> 
+						<li><a href="om.html">OM</a></li>
+						<li><a href="laering.html">LÆRING</a></li>
+						<li><a href="kontakt.html">KONTAKT</a></li>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+	
+	
+	<div class="flow2">
+		<h1>FLOW 2</h1>
+		
+		<div class="slideshow-container z-index">
+		
+			<div class="mySlides fade">
+				<img src="Flow 2/forside.png" alt="Forside" style="width:100%"> 
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="Flow 2/projekter.png" alt="Projekter" style="width:100%"> 
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="Flow 2/ommig.png" alt="Om mig" style="width:100%"> 
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="Flow 2/kontakt.png" alt="Kontakt" style="width:100%"> 
+			</div>
+		</div>
+		
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+		
+		<script>
+			var slideIndex = 1; 
+			showSlides(slideIndex); 
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n); 
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n); 
+			}
+			
+			function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				var dots = document.getElementsByClassName("dot");
+  				if (n > slides.length) {slideIndex = 1}    
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";  
+  				}
+				
+  				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+				
+  				slides[slideIndex-1].style.display = "block";  
+  				dots[slideIndex-1].className += " active";
+				}
+		
+		</script>
+		
+		
+		
+		<h2>BYG DIN PORTFOLIO</h2>
+		<p>Flowprojektet "Byg din portfolio" tog udgangspunkt i flow 1, hvor vi havde skitseret vores drømmeportfolio; nu var det tid til at skulle implementere en fungerende online version af vores portfolio i form af et website. Vi skulle udvikle det fra grunden ved hjælp af HTML 5 og CSS 3. Vi skulle bruge vores prototype fra flow 1 som skabelon, men om det færdige portfolio så ud som det første udkast eller om det havde taget en helt ny drejning var helt op til én selv.<br><br>
+		Mit portfolio tog en helt ny drejning. Det eneste der blev holdt lidt i samme stil var siden med billeder og den orange farve. Jeg synes den gamle portfolio gav et forvirrende indtryk med for mange farver. Derfor gik jeg i flow 2 efter et mere stilrent look, med knap så mange farver og generelt lidt mere rene linjer.<br><br>
+		Ud fra den feedback jeg fik på det nye portfolio var der nogle småjusteringer der skulle laves. Bl.a. skulle billederne inde på siden om "projects" rettes lidt til, så der lige meget mellemrum dem. Derudover gav jeg teksten inde på "About me"-siden en width, så det ikke gav et så rodet udtryk. </p>
+		
+		
+		<div class="links">
+			<a target="_blank" href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A1b4bfec0-03c3-4233-8cc0-6540592ce217">Projektbeskrivelse</a>
+			
+			<a target="_blank" href="file:///Users/josefinenielsen/Documents/1.%20Semester/Eksamen/Flow%202/Byg%20din%20portfolio_oprindelige/index.html">Originale version</a>
+			
+			<a target="_blank" href="file:///Users/josefinenielsen/Documents/1.%20Semester/Eksamen/Flow%202/Byg%20din%20portfolio_forbedredel%C3%B8sning/index.html">
+			Forbedrede version</a>
+		</div>
+	
+	
+	</div>
+	
+	
+	
+	
+	
+	<div class="footer">
+		<a href="https://dk.linkedin.com/in/josefine-vihlborg-nielsen-6b512b172" target="_blank"><img src="ikoner/linkedin.png" alt="LinkedIn" class="linkedin"></a><br>
+		<img src="ikoner/kontaktikoner.png" alt="Kontakt" class="kontaktikon">
+	</div>
+	
+	
+	
+	
+	
+	
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

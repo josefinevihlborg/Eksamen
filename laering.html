@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Læring</title>
+	<link rel="stylesheet" href="styleportfolio.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+</head> 
+	
+<body>
+	
+	<a href="index.html"><img src="logo/mitlogo1.png" alt="logo" class="logo"></a>
+	
+		<header>
+			<div class="container">
+				<nav>
+					<ul>
+						<li><a>PROJEKTER</a>
+							<ul>
+								<li><a href="flow1.html">FLOW 1</a></li>
+								<li><a href="flow2.html">FLOW 2</a></li>
+								<li><a href="flow3.html">FLOW 3</a></li>
+								<li><a href="flow4.html">FLOW 4</a></li>
+								<li><a href="flow5.html">FLOW 5</a></li>
+							</ul>
+								<li><a href="om.html">OM</a></li>
+								<li><a href="laering.html">LÆRING</a></li>
+								<li><a href="kontakt.html">KONTAKT</a></li>
+						</li>
+					</ul>
+				</nav>
+			</div>
+	
+	
+		<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		</header>
+		
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.menu-toggle').click(function(){
+					$('nav').toggleClass('active')
+				})
+				})
+		</script>
+	
+	
+	
+	<div class="laering">
+		
+		<!------------------------------------FLOW 1----------------------------------------->
+		
+		<div class="laeringflow1"> <!--Sæt billede ind af noget jeg har lavet i flow 1-->
+		<h1>FLOW 1</h1>
+		<img src="Flow 1/Photoshop broopgave1.jpg" alt="photoshop">
+		<p>I flow 1 har jeg fået viden inden for følgende emner og programmer:</p> 
+			<li><a>Adobe Photoshop og Adobe XD</a></li>
+			<li><a>Ophavsret</a></li>
+			<li><a>Prototyping</a></li>
+			<li><a>Designteori</a></li>
+			
+		<div class="beskrivelseflow1">
+		<p>I det allerførste flow arbejdede vi det meste af tiden med Adobe Photoshop og Adobe XD. Vi startede ud med undervisning i photoshop, herunder en masse forskellige slags øvelser med billeder, således at vi kunne få en fornemmelse af de mange værktøjer Photoshop indeholder. Vi havde en endags ekskursion på tredje-dagen, hvor vi skulle lave et tilhørende projekt med de billeder vi havde taget på ekskursionen. Projektet lærte mig bl.a. at fjerne/tilføje et element, rette billeder op og lave billeder i et bestemt format og en bestemt størrelse. I forhold til Adobe photoshop har jeg især lært, at det er et program der i starten kan være ret svært at lære at kende pga. alle de muligheder der er. Derfor ved jeg også nu, at den eneste måde man bliver god til programmet på er selvstudie, og man kan altid blive bedre.<span id="dots">...</span>
+		<span id="more"> <br> Derudover har jeg lært lidt om ophavsret og hvordan den beskytter værker og billeder, så alle ikke bare kan bruge billederne. På den måde sikrer ophavsretten kunstnere et vederlag ved brug af billeder osv., men den sikrer også at samfundet kan få adgang til offentliggjorte værker på bestemte vilkår. <br> Sidst men ikke mindst blev vi introduceret til Adobe XD, som er et meget simpelt program i forhold til photoshop og de værktøjer programmerne hver især indeholder. Adobe XD er et fantastisk program til at lave bl.a. prototyper i og vores flowprojekt i flow 1, gik nemlig ud på at skitsere ens drømmeportfolio. Det var faktisk en svær opgave, at skulle designe og skitsere ens portfolio og komme på ideer til det; typografi, farver og billeder skulle gå op i en højere enhed og tilføre portfolien en rød tråd. Det var en ny måde at tænke på, men med lidt undervisning i designteori, blev det lidt nemmere.</span></p>
+		<button onclick="myFunction()" id="myBtn">Læs mere</button>
+			
+			<script>
+				function myFunction() {
+					var dots = document.getElementById("dots"); 
+					var more = document.getElementById("more"); 
+					var myBtn = document.getElementById("myBtn"); 
+					
+				if (dots.style.display === "none") {
+					dots.style.display = "inline"; 
+					myBtn.innerHTML = "Læs mere"; 
+					more.style.display ="none"; 
+				} else {
+					dots.style.display ="none"; 
+					myBtn.innerHTML ="Læs mindre"; 
+					more.style.display ="inline";
+				}
+			}
+			</script>
+		</div>
+	</div>
+		
+			
+		
+		<!------------------------------------FLOW 2----------------------------------------->
+	
+		<div class="laeringflow2"> <!--Sæt billede ind af noget jeg har lavet i flow 2-->
+		<h2>FLOW 2</h2>
+		<img src="Flow 2/Byg din portfolio_forbedredeløsning/images/screendump.png" alt="portfolio">
+		<p>I flow 2 har jeg fået viden inden for følgende emner og programmer:</p>
+			<li><a>HTML 5 og CSS 3</a></li>
+			<li><a>Github</a></li>
+			<li><a>Principper for online kommunikation</a></li>
+			<li><a>Portfoliodesign; indhold og struktur</a></li>
+			<li><a>Designprincipper, layout og grid</a></li>
+			
+		<div class="beskrivelseflow2">
+		<p>Flow 2 har nok været det mest udfordrende, lærerige og sjove flow på 1. semester. Flow 2 indeholdt emner som jeg på ingen måde har prøvet kræfter med før. Jeg var ret nervøs for denne tekniske del af undervisningen og uddannelsen, men jeg må indrømme at jeg synes det har været rigtig fedt og sjovt at lære (og frustrerende). Jeg fik rigtig meget ud af flow 2 og kan nu en hel del HTML og CSS efter flow 2. I flow 2 blev vi introduceret til Dreamweaver; vores flowprojekt var nemlig at vi skulle "bygge"/kode det vi havde lavet i flow 1 - vores portfolio. Det var tid til at prøve kræfter med kodningen mere eller mindre på egen hånd. Det var en kæmpe udfordring. Inden for HTML har jeg bl.a. lært hvordan man laver block/inline elementer, tabeller og links, webformer - altså hjemmesidens struktur og alle dens tags. Inden for CSS har jeg bl.a. fået styr på<span id="dots2">...</span>
+		<span id="more2"> designprincipper, layout, grids, box-modellen, typografien og generelt alt det visuelle - hvordan det præsenterer sig. I starten af semestret troede jeg ikke jeg ville kunne særlig meget inden for kodning, som jeg synes jeg kan efter kun 4 måneder. Flow 2 var utrolig lærerigt og jeg synes kodning er et fedt emne.</span></p>
+		<button onclick="myFunction2()" id="myBtn2">Læs mere</button>
+			
+			<script>
+				function myFunction2() {
+					var dots2 = document.getElementById("dots2"); 
+					var more2 = document.getElementById("more2"); 
+					var myBtn2 = document.getElementById("myBtn2"); 
+					
+				if (dots2.style.display === "none") {
+					dots2.style.display = "inline"; 
+					myBtn2.innerHTML = "Læs mere"; 
+					more2.style.display ="none"; 
+				} else {
+					dots2.style.display ="none"; 
+					myBtn2.innerHTML ="Læs mindre"; 
+					more2.style.display ="inline";
+				}
+			}
+			</script>
+		</div>
+	</div>
+		
+		
+		
+		
+		<!------------------------------------FLOW 3----------------------------------------->
+		
+		<div class="laeringflow3"> <!--Sæt billede ind af noget jeg har lavet i flow 3-->
+		<h3>FLOW 3</h3>
+		<img src="Flow 3/Ikoner/webicons.png" alt="webicons">
+		<p>I flow 3 har jeg fået viden inden for følgende emner og programmer:</p>
+			<li><a>Adobe Illustrator</a></li>
+			<li><a>Farver og farvesystemer</a></li>
+			<li><a>Typografi</a></li>
+			<li><a>Brugertest og dataindsamling</a></li>
+			
+		<div class="beskrivelseflow3">
+		<p>I flow 3 brugte vi meget tid i Illustrator, eftersom en del af indholdet i både de mindre opgaver og flowprojektet var centreret omkring grafik og ikoner til digitale interfaces. Flowprojekt 3 gik ud på at designe og bygge en app ved brug af Adobe Illustrator, Photoshop og XD. Vi fik prøvet kræfter med illustrators mange muligheder til især at udvikle ikoner hvoraf farver, farvesystemer samt typografi også var en vigtig del. Men ikke kun det visuelle er vigtigt; alt arbejdet bag det visuelle er også en vigtig del. Ting som; hvilken målgruppe vil man gerne ramme, hvordan skal appen overhovedet se ud osv. er 50% af arbejdet. Derfor arbejdede vi bl.a. også med personas og brugertests, så man kunne afprøve forskellige tests på den målgruppe man gerne ville ramme. På den måde kunne man bruge deres mening til at gøre ens app endnu bedre<span id="dots1">...</span>
+		<span id="more1"> <br> Sidst men ikke mindst arbejdede vi også lidt med informationsarkitektur, herunder wireframes og prototyper, så alle ens tanker om det visuelle kunne udfolde sig. Informationsarkitektur har især lært mig at det er en god ide at få sine tanker ned på et papir, inden man begiver sig ud i at designe.<br>Til højre for ses resultatet af en Illustrator opgave vi fik stillet, hvor vi skulle give et bud på 3-5 webicons, som var lavet i Illustrator.</span></p>
+		<button onclick="myFunction1()" id="myBtn1">Læs mere</button>
+			
+			<script>
+				function myFunction1() {
+					var dots1 = document.getElementById("dots1"); 
+					var more1 = document.getElementById("more1"); 
+					var myBtn1 = document.getElementById("myBtn1"); 
+					
+				if (dots1.style.display === "none") {
+					dots1.style.display = "inline"; 
+					myBtn1.innerHTML = "Læs mere"; 
+					more1.style.display ="none"; 
+				} else {
+					dots1.style.display ="none"; 
+					myBtn1.innerHTML ="Læs mindre"; 
+					more1.style.display ="inline";
+				}
+			}
+			</script>
+		</div>	
+	</div>
+		
+		
+		
+		<!------------------------------------FLOW 4----------------------------------------->
+		
+		<div class="laeringflow4"> <!--Sæt billede ind af noget jeg har lavet i flow 3-->
+		<h4>FLOW 4</h4>
+		<img src="Flow 4/digitalsecurityikon.png" alt="digitalsecurity">
+		<p>I flow 4 har jeg fået viden inden for følgende emner og programmer:</p>
+			<li><a>Design guidelines</a></li>
+			<li><a>Responsive design</a></li>
+			<li><a>Javascript og jQuery</a></li>
+			<li><a>Projektplanlægning</a></li>
+			
+		<div class="beskrivelseflow4">
+		<p>I det sidste flow på 1. semester var flowprojektet om Sweetbot.Design omdrejningspunktet. Til det skulle vi både bruge vores færdigheder inden for det tekniske, samt inden for det visuelle idet vi skulle udvikle et responsivt website. I forhold til det tekniske fik vi derfor lidt undervisning i responsive design, javascript og jQuery. Javascript og jQuery er et helt andet sprog end HTML og CSS og jeg synes det var svært at lære og jeg er stadig ret usikker i det. Jeg glæder mig dog til vi skal have mere af det på 2. semester, så mine færdigheder inden for det kan blive bedre.
+		Det visuelle kom til udtryk i form af logoer og ikoner lavet i illustrator, som selvfølgelig skulle bruges til websitets visuelle udtryk. På den måde blev det vi havde lært i flow 2 og 3 især sat sammen i dette flow og det var fedt at kunne kombinere det, så man kan se hvor vigtige de forskellige elementer er i forhold til hinanden.<span id="dots3">...</span> 
+		<span id="more3"> <br>Vi lærte også noget helt nyt i flow 4; nemlig projektplanlægning. Sammen med projektplanlægningen var informationsarkitekturen også en vigtig del af flowprojektet. Med de to ting har jeg især lært hvor vigtigt det er atvplanlægge sin tid og finde ud af hvad der skal laves og hvordan produktet skal se ud, inden man begynder på det endelige produkt. Det er en god måde at få lavet alt forarbejdet på - for det er næsten 50% af det færdige produkt der ligger i det. <br> Samlet set synes jeg flow 4 fik samlet alle de ting, som vi har haft om i de forskellige flows og det var en rigtig god måde at gøre det på. </span></p>
+		<button onclick="myFunction3()" id="myBtn3">Læs mere</button>
+			
+			<script>
+				function myFunction3() {
+					var dots3 = document.getElementById("dots3"); 
+					var more3 = document.getElementById("more3"); 
+					var myBtn3 = document.getElementById("myBtn3"); 
+					
+				if (dots3.style.display === "none") {
+					dots3.style.display = "inline"; 
+					myBtn3.innerHTML = "Læs mere"; 
+					more3.style.display ="none"; 
+				} else {
+					dots3.style.display ="none"; 
+					myBtn3.innerHTML ="Læs mindre"; 
+					more3.style.display ="inline";
+				}
+			}
+			</script>
+		</div>
+	</div>
+	</div>
+	
+	
+	<div class="footer">
+		<a href="https://dk.linkedin.com/in/josefine-vihlborg-nielsen-6b512b172" target="_blank"><img src="ikoner/linkedin.png" alt="LinkedIn" class="linkedin"></a><br>
+		<img src="ikoner/kontaktikoner.png" alt="Kontakt" class="kontaktikon">
+	</div>
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

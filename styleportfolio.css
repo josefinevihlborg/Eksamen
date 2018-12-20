@@ -1,0 +1,1224 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/********************************* Styling på store skærme fx desktop ***********************************/
+
+/****************************** Dropdown-menu og navigationsbar (alle sider) ********************************/
+
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+
+.container {
+	width: 80%; 
+	margin: auto; 
+}
+
+body {
+	background-color: #F6F6F6; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";margin: 0; 
+}
+
+nav {
+	width: 100%; 
+	height: 45px;  
+	border-bottom: 1px solid black;   
+	border-top: 1px solid black; 
+}
+
+nav ul {
+	list-style: none;
+	text-align: center; 
+}
+
+nav li {
+	display: inline-block; 
+}
+
+nav ul li {
+	position: relative; 
+}
+
+nav ul li a {	
+	display: block; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: black; 
+	font-size: 16px; 
+	padding: 12.5px 30px; 
+	text-decoration: none;
+	letter-spacing: 2px; 
+	font-weight: bold; 
+}
+
+nav ul li a:hover {
+	color: orange; 
+}
+
+nav ul li ul {
+	display: none; 
+	position: absolute; 
+	background-color: #F6F6F6; 
+	padding: 10px; 
+	border-bottom: 1px solid black; 
+	border-left: 1px solid black; 
+	border-right: 1px solid black; 
+	z-index: 999; 
+}
+
+nav ul li:hover ul {
+	display: block; 
+}
+
+nav ul li ul li {
+	width: 150px;  
+}
+
+nav ul li ul li a {
+	padding: 14px 14px;
+	text-align: center; 
+}
+
+nav ul li ul li a:hover {
+	color: orange; 
+}
+
+
+.menu-toggle {
+	color: red; 
+	float: right; 
+	line-height: 50px; 
+	font-size: 30px; 
+	display: none; 
+}
+
+@media (max-width: 800px)
+{
+	header 
+	{
+		padding: 0 20px; 
+	}
+	.menu-toggle 
+	{
+		display: block; 
+	}
+	header nav 
+	{
+		position: absolute; 
+		width: 100%; 
+		height: calc(100vh - 50px); 
+		background: #f6f6f6;   
+		top: 50px; 
+		left: 100%; 
+		transition: 0.5s; 
+	}
+	header nav.active 
+	{
+		left: 0; 
+	}
+	header nav ul 
+	{
+		display: block;
+		text-align: center; 
+	}
+	header nav ul li a 
+	{
+		padding: 8%; 
+		/*border-bottom: 1px solid rgba(0,0,0,.2); */
+	}
+}
+
+
+
+/*********************************** Logo ********************************************/
+
+.logo { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 13%; 
+}
+
+/********************************* Forside *****************************************/
+.forside {
+	width: 80%; 
+	margin: auto; 
+	position: relative;
+	text-align: center; 
+}
+
+.forside img { 
+	width: 100%; 
+}
+
+.centered1 {
+	position: absolute; 
+	top: 30%; 
+}
+
+.centered1 h1 {
+	font-family: "Helvetica Neue"; 
+	font-size: 35px;
+	color: orange; 
+	width: 100%; 
+	letter-spacing: 2px; 
+	font-weight: normal;  
+}
+
+.centered1 h2 {
+	font-family: "Helvetica Neue"; 
+	font-size: 35px;
+	color: orange;
+	letter-spacing: 2px; 
+	font-weight: normal; 
+	margin-left: 15%; 
+	margin-top: 2%; 
+	width: 70%;
+	border-right: 3px solid orange; 
+	border-left: 3px solid orange; 
+}
+
+.centered1 h3 {
+	font-family: "Helvetica Neue"; 
+	color: black; 
+	font-size: 18px;
+	letter-spacing: 1px; 
+	font-weight: normal; 
+	text-align: center; 
+	margin-top: 5%; 
+	margin-bottom: 22%;
+}
+
+.forside1 {
+	width: 80%; 
+	margin: auto; 
+}
+
+.forside1 h1 {
+	text-align: center; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 20px; 
+	margin-top: 4%;  
+	letter-spacing: 2px; 
+	border-top: 1px solid orange;
+	padding-top: 6%; 
+}
+
+.forside1 img {
+	width: 55%; 
+	margin-left: 22.5%; 
+	margin-top: 4%; 
+}
+
+
+
+
+/********************************* "Projekter-siden: flow 1" ********************************/
+.z-index{
+	z-index: -1;
+}
+
+.flow1 {
+	width: 80%; 
+	margin: auto; 
+}
+
+.flow1 h1 {
+	text-align: center; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 20px; 
+	margin-top: 4%; 
+	letter-spacing: 2px; 
+}
+
+.flow1 h2 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 2%; 
+	letter-spacing: 2px; 
+}
+
+.flow1 p {
+	font-family: "Helvetica neue";  
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5; 
+	column-count: 2; 
+}
+
+.links {
+	margin-top: 2%;
+	font-size: 17px; 
+}
+
+.links a {
+	margin-right: 2%;
+	color: orange;
+	font-family: "Helvetica neue"; 
+}
+
+.links a:hover {
+	color: blue; 
+}
+
+
+
+
+
+/*********************************** Image-slideshow *********************************/
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 80%;
+	position: relative;
+	margin: auto;
+	padding-top: 4%; 
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+/********************************* "Projekter-siden: flow 2" ********************************/
+.flow2 {
+	width: 80%; 
+	margin: auto; 
+}
+
+
+.flow2 h1 {
+	text-align: center; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 20px; 
+	margin-top: 4%; 
+	letter-spacing: 2px; 
+}
+
+.flow2 h2 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 2%; 
+	letter-spacing: 2px;
+}
+
+.flow2 p {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5; 
+	column-count: 2; 
+	padding-bottom: 2%; 
+}
+
+.flow2 li a {
+	font-family: "Helvetica neue";  
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5; 
+}
+
+
+
+
+/********************************* "Projekter-siden: flow 3" ********************************/
+
+.flow3 {
+	width: 80%; 
+	margin: auto; 
+}
+
+.flow3 h1 {
+	text-align: center; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 20px; 
+	margin-top: 4%;
+	letter-spacing: 2px; 
+}
+
+.forste {
+	margin-right: 1.8%; 
+}
+
+.anden {
+	margin-right: 1.8%; 
+}
+
+.tredje {
+	margin-right: 1.8%; 
+}
+
+.fjerde {
+	float: right;  
+}
+
+.flow3 h2 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 2%; 
+	letter-spacing: 2px;
+}
+
+.flow3 p {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5; 
+	column-count: 2; 
+	padding-bottom: 2%; 
+}
+
+.flow3 li a {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5; 
+}
+
+
+
+/********************************* "Projekter-siden: flow 4" ********************************/
+.flow4 {
+	width: 80%; 
+	margin: auto; 
+}
+
+.flow4 h1 {
+	text-align: center; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 20px; 
+	margin-top: 4%;
+	letter-spacing: 2px; 
+}
+
+.flow4 h2 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 2%; 
+	letter-spacing: 2px;
+}
+
+.flow4 p {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5;
+	column-count: 2;
+	padding-bottom: 2%; 
+}
+
+
+
+/******************************************************* "Projekter-siden: flow 5" ********************************************************/
+
+.flow5 h1 {
+	text-align: center; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 20px; 
+	margin-top: 4%;
+	letter-spacing: 2px; 
+}
+
+
+/************************ Design-skitser ****************************/
+.designskitser h1 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px; 
+}
+
+.designskitser p {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5;  
+	width: 100%; 
+	column-count: 2; 
+}
+
+
+/***************************** Informationsarkitektur ******************************/
+.informationsarkitektur h1 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	padding-top: 4%; 
+	border-top: 1px solid orange;
+	letter-spacing: 2px; 
+}
+
+.sitemap {
+	padding-bottom: 4%; 
+}
+
+.sitemap h2 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 2%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px; 
+}
+
+.sitemap p {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5;
+	padding-bottom: 24%; 
+	width: 50%; 
+}
+
+.sitemap img {
+	width: 45%; 
+	height: 450px; 
+	float: right; 
+	padding-top: 0.5%; 
+}
+
+.flowchart h3 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px;
+	margin-bottom: 1%; 
+	letter-spacing: 2px; 
+}
+
+.flowchart img {
+	width: 90%;
+	margin-left: 5%;  
+	padding-top: 0.5%;
+	margin-bottom: 2%; 
+}
+
+.flowchart p {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5;
+	padding-bottom: 2%; 
+	width: 100%; 
+}
+
+.wireframe h4 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 2%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px; 
+}
+
+.wireframe p {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5;
+	padding-bottom: 2%; 
+	width: 100%; 
+	column-count: 2; 
+}
+
+.linkswireframe {
+	font-size: 16px; 
+	padding-bottom: 2%; 
+}
+
+.linkswireframe a {
+	margin-right: 2%; 
+	font-family: "Helvetica neue";
+	color: orange; 
+}
+
+.linkswireframe a:hover {
+	color: blue; 
+}
+
+.brugertest h5 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px;
+}
+
+.brugertest p {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5; 
+	width: 100%; 
+	margin-bottom: 4%; 
+	column-count: 2; 
+}
+
+.brugertest {
+	border-bottom: 1px solid orange; 
+}
+
+
+/****************************** Projektplanlægning *******************************/
+.projektplanlaegning h1 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	letter-spacing: 2px; 
+	margin-bottom: 2%; 
+	margin-top: 4%; 
+}
+
+.pbs {
+	padding-bottom: 4%; 
+}
+
+.pbs h2 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 2%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px; 
+}
+
+.pbs p {
+	font-family: "Helvetica neue";  
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5;
+	padding-bottom: 22%; 
+	width: 50%; 
+}
+
+.pbs img {
+	width: 45%;
+	float: right; 
+	margin-top: 0.5%; 
+}
+
+.wbs h3 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%; 
+	margin-bottom: 1%; 
+	letter-spacing: 2px; 
+}
+
+.wbs p {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5;
+	padding-bottom: 2%; 
+	width: 100%; 
+	column-count: 2; 
+}
+
+.wbs img {
+	width: 90%;
+	padding-top: 0.5%; 
+	margin-left: 5%; 
+	margin-bottom: 2%; 
+}
+
+.gantt h4 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px;
+}
+
+.gantt {
+	border-bottom: 1px solid orange;
+}
+
+.gantt p {
+	font-family: "Helvetica neue";  
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5;
+	padding-bottom: 2%; 
+	width: 100%; 
+	column-count: 2; 
+}
+
+.gantt img {
+	width: 90%;
+	padding-top: 0.5%; 
+	margin-left: 5%; 
+	padding-bottom: 4%; 
+}
+
+
+/*************************************** Designmanual **********************************************/
+.designmanual h6 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px;
+}
+
+.designmanual h1 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 2%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px;
+}
+
+.designmanual h2 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px;  
+}
+
+.designmanual h3 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px;
+}
+
+.designmanual h4 {
+	text-align: left; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	margin-top: 4%;
+	margin-bottom: 1%; 
+	letter-spacing: 2px;
+}
+
+.designmanual p {
+	font-family: "Helvetica neue";  
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5; 
+	width: 100%; 
+	column-count: 2; 
+}
+
+.footerflow5 {
+	width: 100%; 
+	margin: auto; 
+	border-top: 1px solid black; 
+	height: 70px;
+	margin-top: 10%;  
+}
+
+.footerflow5 p {
+	margin-top: 2%;  
+}
+
+.linkedin {
+	float: left; 
+	width: 8%; 
+	padding-top: 2.3%; 
+	margin-left: 33%; 	
+}
+
+.kontaktikon {
+	float: left; 
+	width: 35%; 
+	padding-bottom: 2%; 
+	padding-top: 1%; 
+	margin-left: 5%; 
+}
+.linkedin {
+	float: left; 
+	width: 8%; 
+	padding-top: 2.3%; 
+	margin-left: 33%; 	
+}
+
+.kontaktikon {
+	float: left; 
+	width: 35%; 
+	padding-bottom: 2%; 
+	padding-top: 1%; 
+	margin-left: 5%; 
+}
+
+
+
+
+
+/********************************* "Om-siden" ***************************************/
+
+.om {
+	width: 80%; 
+	margin: auto; 
+}
+
+.om h1 {
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 20px; 
+	margin-top: 4%; 
+	padding-bottom: 4%; 
+	text-align: center; 
+	letter-spacing: 2px; 
+}
+
+.om h2 {
+	width: 50%;  
+	margin-left: 53%;  
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	letter-spacing: 2px;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%; 
+}
+
+.om h3 {
+	width: 50%;  
+	margin-left: 53%;  
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"; 
+	font-size: 16px; 
+	letter-spacing: 2px;
+	margin-bottom: 0.5%;  
+}
+
+.om h4 {
+	width: 55%; 
+	font-family: "Helvetica neue";  
+	letter-spacing: 0.5px; 
+	font-size: 25px; 
+	line-height: 1.5; 
+	margin-left: 49%;
+	margin-bottom: 15%; 
+	font-weight: normal; 
+	color: orange; 
+	text-align: center; 
+}
+
+.om p {
+	width: 47%; 
+	font-family: "Helvetica neue";  
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+	line-height: 1.5; 
+	margin-left: 53%;
+	margin-bottom: 4%; 
+}
+
+.om img {
+	width: 47%; 
+	float: left; 
+	padding-top: 0.5%; 
+	margin-bottom: 4%; 
+}
+
+
+/*********************************** "Læring-siden" ************************************/
+
+.laering {
+	width: 80%;
+	margin: auto; 
+}
+
+.laering h1 {
+	font-size: 20px; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	margin-top: 4%;
+	padding-bottom: 4%; 
+	text-align: center;
+	letter-spacing: 2px; 
+}
+
+.laeringflow1 {
+	border-bottom: 1px solid orange; 
+}
+
+.laeringflow1 p {
+	padding-bottom: 2%; 
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+	font-size: 16px; 
+}
+
+.laeringflow1 li a {
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px;  
+	line-height: 1.5; 
+}
+
+.beskrivelseflow1 {
+	 padding-bottom: 4%; 
+}
+
+.beskrivelseflow1 p {
+	padding-top: 2%; 
+	line-height: 1.5; 
+	width: 50%; 
+}
+
+.laeringflow1 img {
+	float: right; 
+	width: 42%; 
+	height: 440px; 
+	padding-top: 0.5%; 
+}
+
+#myBtn {
+	padding: 0.5%; 
+	background-color: orange; 
+	font-size: 13px; 
+	border: none; 
+}
+
+#more {
+	display: none; 
+}
+
+
+
+
+
+.laering h2 {
+	font-size: 20px; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	margin-top: 4%; 
+	padding-bottom: 4%; 
+	text-align: center;
+	letter-spacing: 2px; 
+}
+
+.laeringflow2 {
+	border-bottom: 1px solid orange; 
+}
+
+.laeringflow2 p {
+	padding-bottom: 2%; 
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+}
+
+.laeringflow2 li a {
+	font-family: "Helvetica neue"; 
+	line-height: 1.5; 
+}
+
+.beskrivelseflow2 {
+	 padding-bottom: 4%; 
+}
+
+.beskrivelseflow2 p {
+	padding-top: 2%; 
+	line-height: 1.5; 
+	width: 50%; 
+}
+
+.laeringflow2 img {
+	float: right; 
+	width: 42%;
+	height: 460px; 
+	padding-top: 0.5%; 
+}
+
+#myBtn2 {
+	padding: 0.5%; 
+	background-color: orange; 
+	font-size: 13px; 
+	border: none; 
+}
+
+#more2 {
+	display: none; 
+}
+
+
+
+
+
+
+.laering h3 {
+	font-size: 20px; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	margin-top: 4%; 
+	padding-bottom: 4%;  
+	text-align: center;
+	letter-spacing: 2px; 
+}
+
+.laeringflow3 {
+	border-bottom: 1px solid orange; 
+}
+
+.laeringflow3 p {
+	padding-bottom: 2%; 
+	font-family: "Helvetica neue"; 
+	letter-spacing: 0.5px; 
+}
+
+.laeringflow3 li a {
+	font-family: "Helvetica neue";  
+	line-height: 1.5; 
+}
+
+.beskrivelseflow3 {
+	 padding-bottom: 4%; 
+}
+
+.beskrivelseflow3 p {
+	padding-top: 2%; 
+	line-height: 1.5; 
+	width: 50%; 
+}
+
+.laeringflow3 img {
+	float: right; 
+	width: 42%;
+	padding-top: 0.5%; 
+}
+
+#myBtn1 {
+	padding: 0.5%; 
+	background-color: orange; 
+	font-size: 13px; 
+	border: none; 
+}
+
+#more1 {
+	display: none; 
+}
+
+
+
+
+
+.laering h4 {
+	font-size: 20px; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	margin-top: 4%; 
+	padding-bottom: 4%; 
+	text-align: center;
+	letter-spacing: 2px; 
+}
+
+.laeringflow4 {
+	/* border-bottom: 1px solid orange; */ 
+}
+
+.laeringflow4 p {
+	padding-bottom: 2%; 
+	font-family: "Helvetica neue";  
+	letter-spacing: 0.5px; 
+}
+
+.laeringflow4 li a {
+	font-family: "Helvetica neue";  
+	line-height: 1.5; 
+}
+
+.beskrivelseflow4 {
+	 /* padding-bottom: 1%; */
+}
+
+.beskrivelseflow4 p {
+	padding-top: 2%; 
+	line-height: 1.5; 
+	width: 50%; 
+}
+
+.laeringflow4 img {
+	float: right; 
+	width: 42%;
+	padding-top: 0.5%; 
+}
+
+#myBtn3 {
+	padding: 0.5%; 
+	background-color: orange; 
+	font-size: 13px; 
+	border: none; 
+}
+
+#more3 {
+	display: none; 
+}
+
+
+
+
+/********************************* "Kontakt-siden" ************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    resize: vertical;  
+	border: 1px solid grey; 
+}
+
+input[type=submit] {
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+	margin-top: 4%; 
+	margin-left: 40%; 
+	font-size: 14px; 
+	border: 1px solid grey; 
+	font-family: "Helvetica neue"; 
+}
+
+input[type=submit]:hover {
+    color: orange;
+}
+
+.formular {
+    padding: 40px;
+	background-color: white; 
+	font-size: 15px; 
+	width: 33%;
+	margin-left: 33.5%; 
+	font-family: "Helvetica neue"; 
+}
+
+.kontakt-billede img {
+	width: 80%;
+	margin: auto; 
+	margin-left: 10%; 
+	opacity: 0.2; 
+	filter: alpha(opacity=20); /* For IE8 and earlier */
+	position: relative; 
+}
+
+.centered {
+	position: absolute;
+	top: 52.5%; 
+	left: 51%;
+	transform: translate(-50%, -50%);
+	font-size: 45px; 
+	letter-spacing: 35px; 
+	font-family: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	z-index: -1; 
+}
+
+.kontakt h1 {
+	width: 80%; 
+	margin-top: 4%; 
+	margin-left: 40%; 
+	font-family: "Helvetica Neue"; 
+	letter-spacing: 2%;
+	font-size: 18px; 
+	font-weight: normal; 
+	margin-bottom: 1%; 
+}
+
+.kontakt img {
+	width: 3%;
+	margin-left: 50%;  
+}
+
+/************************************* Footer ***************************************/
+
+.footer {
+	width: 80%; 
+	margin: auto; 
+	border-top: 1px solid black; 
+	height: 70px;
+	margin-top: 8%;  
+}
+
+.linkedin {
+	float: left; 
+	width: 8%; 
+	padding-top: 2.3%; 
+	margin-left: 33%; 	
+}
+
+.kontaktikon {
+	float: right; 
+	width: 35%; 
+	padding-bottom: 2%; 
+	padding-top: 1%;
+	margin-right: 19%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

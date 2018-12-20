@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flow 3</title>
+<link rel="stylesheet" href="styleportfolio.css">
+</head>
+
+<body>
+	<a href="index.html"><img src="logo/mitlogo1.png" alt="logo" class="logo"></a>
+	
+	<div class="container">
+		<nav>	
+			<ul>
+				<li><a>PROJEKTER</a>
+					<ul>
+						<li><a href="flow1.html">FLOW 1</a></li>
+						<li><a href="flow2.html">FLOW 2</a></li>
+						<li><a href="flow3.html">FLOW 3</a></li>
+						<li><a href="flow4.html">FLOW 4</a></li>
+						<li><a href="flow5.html">FLOW 5</a></li>
+					</ul> 
+						<li><a href="om.html">OM</a></li>
+						<li><a href="laering.html">LÆRING</a></li>
+						<li><a href="kontakt.html">KONTAKT</a></li>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+	
+	<div class="flow3">
+		<h1>FLOW 3</h1>
+		
+		
+		<div class="slideshow-container z-index">
+		
+			<div class="mySlides fade">
+				<img src="Flow 3/images/1-4.png" alt="1-4" style="width:100%"> 
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="Flow 3/images/5-9.png" alt="5-9" style="width:100%"> 
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="Flow 3/images/10-14.png" alt="10-14" style="width:100%"> 
+			</div>
+			
+		</div>
+		
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		
+		<script>
+			var slideIndex = 1; 
+			showSlides(slideIndex); 
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n); 
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n); 
+			}
+			
+			function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				var dots = document.getElementsByClassName("dot");
+  				if (n > slides.length) {slideIndex = 1}    
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";  
+  				}
+				
+  				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+				
+  				slides[slideIndex-1].style.display = "block";  
+  				dots[slideIndex-1].className += " active";
+				}
+		
+		</script>
+		
+		<!--<img src="Flow 3/images/forside.png" alt="billede" class="forste">
+			<img src="Flow 3/images/menu.png" alt="billede" class="anden">
+			<img src="Flow 3/images/kriterier.png" alt="billede" class="tredje">
+			<img src="Flow 3/images/læs.png" alt="billede" class="fjerde">-->
+			
+		
+		<h2>BYG EN APP</h2>
+			<p>I flow 3 tog vi hul på nogle nye emner og redskaber. Jeg fik en masse nyttig viden om farver, typografier og design principper, som jeg havde stor gavn af til vores flowprojekt; Byg en app.<br>
+			Jeg lavede en bolig-app som jeg fik rigtig fin respons på; mine ikoner var dog lidt bombastiske. Jeg har derfor lavet mine ikoner lidt om, så de ikke fremstår helt så bombastiske og tunge, som de gjorde før. Jeg har givet dem mindre fylde og valgt nogle færre farver, da toningerne kan være ret problematiske i ikondesign. Webikoner er ret små og det kan derfor være svært at se de forskellige udtryk, som man ellers godt kan se i større format.   
+				
+		</p>
+		
+		
+		
+		
+		<div class="links">
+			<a target="_blank" href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Abda4c1eb-033b-4a0a-a4a9-839d011e069e">Projektbeskrivelse</a>
+			<a target="_blank" href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A19bef532-971a-4049-ba86-33db79d24a64">Rapport</a>
+			<a target="_blank" href="https://xd.adobe.com/view/abdb4660-0e4b-4ca4-6449-8cc608afcf29-ddea/?fullscreen">Originale version</a>
+			<a target="_blank" href="https://xd.adobe.com/view/95705bbc-3c43-40ac-51f4-5f8cf88eed80-e341/?fullscreen">Forbedrede version</a>
+		</div>
+		
+	</div>
+	
+			
+	
+	<div class="footer">
+		<a href="https://dk.linkedin.com/in/josefine-vihlborg-nielsen-6b512b172" target="_blank"><img src="ikoner/linkedin.png" alt="LinkedIn" class="linkedin"></a><br>
+		<img src="ikoner/kontaktikoner.png" alt="Kontakt" class="kontaktikon">
+	</div>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

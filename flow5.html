@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flow 5</title>
+<link rel="stylesheet" href="styleportfolio.css">
+</head>
+
+<body>
+	<a href="index.html"><img src="logo/mitlogo1.png" alt="logo" class="logo"></a>
+	
+	<div class="container">
+		<nav>	
+			<ul>
+				<li><a>PROJEKTER</a>
+					<ul>
+						<li><a href="flow1.html">FLOW 1</a></li>
+						<li><a href="flow2.html">FLOW 2</a></li>
+						<li><a href="flow3.html">FLOW 3</a></li>
+						<li><a href="flow4.html">FLOW 4</a></li>
+						<li><a href="flow5.html">FLOW 5</a></li>
+					</ul> 
+						<li><a href="om.html">OM</a></li>
+						<li><a href="laering.html">LÆRING</a></li>
+						<li><a href="kontakt.html">KONTAKT</a></li>
+				</li>
+			</ul>
+		</nav>
+	
+	
+	
+	<div class="flow5">
+		<h1>FLOW 5</h1>
+	</div>
+		
+	
+	
+	<!-- Designskitser -->
+	<div class="designskitser">
+		<h1>DESIGNSKITSER</h1> <!--Link til XD-versionen til iphone-->
+			<p>Jeg har valgt at redesigne stort set alt fra min tidlidgere portfolio (flow 2), da der var mange elementer jeg ikke var tilfreds med. For det første havde jeg fået mange nye ideer som jeg godt ville have inkorporeret i min nye portfolio. For det andet havde mine færdigheder inden for design og kodning udviklet sig meget fra flow 2 og frem til nu, så derfor var der mange områder i min portfolio jeg synes jeg kunne lave bedre. Alt mit indhold i min første portfolio var ikke tilstrækkeligt og jeg følte ikke at portfolien viste hvem jeg var og hvad jeg kunne. Det eneste jeg har ført videre fra det første portfolio er til dels min menu-bar og den gennemgående orange farve. Generelt for det nye design i min portfolio har jeg fået mere indhold, så det hele ikke fremstår så tomt og uinspirerende.</p>
+		
+			<div class="slideshow-container z-index">
+				
+			<div class="mySlides fade">
+				<img src="Flow 5/Designskitser/forside.jpg" alt="Forside" style="width:100%"> <!--Mangler forsidebillede-->
+			</div>
+		
+			<div class="mySlides fade">
+				<img src="Flow 5/Designskitser/flow1.jpg" alt="Flow 1" style="width:100%"> 
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="Flow 5/Designskitser/flow2.jpg" alt="Flow 2" style="width:100%"> 
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="Flow 5/Designskitser/flow3.jpg" alt="Flow 3" style="width:100%"> 
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="Flow 5/Designskitser/flow4.jpg" alt="Flow 4" style="width:100%"> 
+			</div>
+				
+			<div class="mySlides fade">
+				<img src="Flow 5/Designskitser/flow5.jpg" alt="Flow 5" style="width:100%"> 
+			</div>
+				
+			<div class="mySlides fade">
+				<img src="Flow 5/Designskitser/om.jpg" alt="Om" style="width:100%"> 
+			</div>
+				
+			<div class="mySlides fade">
+				<img src="Flow 5/Designskitser/læring.jpg" alt="Læring" style="width:100%"> 
+			</div>
+				
+			<div class="mySlides fade">
+				<img src="Flow 5/Designskitser/kontakt.jpg" alt="Kontakt" style="width:100%"> 
+			</div>
+			
+			
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+			<span class="dot" onclick="currentSlide(6)"></span>
+			<span class="dot" onclick="currentSlide(7)"></span>
+			<span class="dot" onclick="currentSlide(8)"></span>
+			<span class="dot" onclick="currentSlide(9)"></span>
+		</div>
+		
+		<script>
+			var slideIndex = 1; 
+			showSlides(slideIndex); 
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n); 
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n); 
+			}
+			
+			function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("mySlides");
+  				var dots = document.getElementsByClassName("dot");
+  				if (n > slides.length) {slideIndex = 1}    
+  				if (n < 1) {slideIndex = slides.length}
+  				for (i = 0; i < slides.length; i++) {
+      				slides[i].style.display = "none";  
+  				}
+				
+  				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+  				}
+				
+  				slides[slideIndex-1].style.display = "block";  
+  				dots[slideIndex-1].className += " active";
+				}
+		
+		</script>
+		
+	</div>
+		
+		
+	
+	
+	
+	<div class="informationsarkitektur">
+		<h1>INFORMATIONSARKITEKTUR</h1>
+		
+		<div class="sitemap">
+			<img src="Flow 5/Informations-arkitektur/sitemap.png" alt="Sitemap">
+				<h2>Sitemap</h2>
+					<p>Et sitemap er en oversigt over et website der viser informationshiarkiet og hvordan websitet ser ud. Det kan være en god hjælp til når man skal finde rundt på et website at vide hvilket hiearki der er. Det er især brugbart til hjemmesider med meget indhold, hvor det kan være svært at navigere rundt. Da min portfolio ikke har mere end 4 menupunkter, er den dermed også nemmere at navigere rundt i.   </p>
+			</div>
+		
+			
+		<div class="flowchart">
+			<h3>Flowchart</h3>
+				<p>Et flowchart beskriver den proces, brugeren gennemgår, når han/hun er inde<br> på hjemmesiden. Mit flowchart har de scenarier med, som en mulig bruger kan gå igennem,<br> når der navigeres rundt i min portfolio.</p>
+				<img src="Flow 5/Informations-arkitektur/flowchartportfolio.png" alt="Flowchart" class="flowchart"> 
+		</div>
+		
+		
+		<div class="wireframe">
+			
+				<h4>Wireframe</h4>
+					<p>Med min wireframe viser jeg hvilke indholdselementer der er på de enkelte sider i min portfolio, hvordan indholdet er placeret i forhold til hinanden og hvor meget plads de forskellige indholdselementer forventes at optage. Da en wireframe ikke forholder sig til æstestik (farver, typografi, grafik osv.) er den lavet i sort/hvid.<br> Da det er på wireframe-stadiet man beslutter sig for hvordan forskellen på fx designet skal se ud på en Iphone og på web, har jeg lavet en wireframe både til Iphone og til web. Selvom jeg ikke har lavet selve produktet til Iphonen, kan man ud fra min wireframe til Iphone få en idé om hvordan den ville komme til at se ud.</p>
+			
+			<div class="linkswireframe"> <!-- Få sat de rigtige links ind -->
+				<a target="_blank" href="https://xd.adobe.com/view/b6ad766a-3615-4594-45d0-0c546285d187-c09c/">Wireframe Web</a>
+				<a target="_blank" href="https://xd.adobe.com/view/7d6ee44f-0aa4-493d-516d-0c597bea1777-0b5f/">Wireframe Iphone</a>
+			</div>
+	
+		</div>
+		
+		
+		<div class="brugertest">
+		<h5>Brugertest</h5>
+			<p>Jeg har lavet et par brugertests på nogle forskellige elementer.<br>
+			Til at starte med havde jeg på mit logo sat prikken der rigtigt er over "J'et", under "J'et", for at lave det lidt anderledes. Men ud fra min brugertest gav det ikke mening for brugeren og ideen i det var ikke klar nok. Derfor har jeg valgt at fjerne den fuldstændig.<br><br>
+			Der ud over lavede jeg en brugertest i forhold til min menu-bar og footer, da jeg var i tvivl om de skulle være 100% og fylde helt ud til kanten, eller om de skulle være 80% og være centreret og have lidt luft ude i siderne. Ud fra brugertesten valgte jeg at den skulle være centreret og have noget luft i hver side, da det var resultatet af brugertesten.</p>
+	</div>
+		
+	</div>
+		
+	
+	
+	<div class="projektplanlaegning">
+		<h1>PROJEKTPLANLÆGNING</h1>
+			
+			<div class="pbs">
+				<img src="Flow 5/projekt-planlaegning/pbs.png" alt="PBS">
+					<h2>PBS</h2>
+						<p>Product Breakdown Structure (PBS) er et værktøj til at analysere, dokumentere og kommunikere udbyttet af et projekt og derfor har jeg valgt at lave en PBS over min portfolio. Jeg har taget udgangspunkt i de enkelte komponenter som udgør hele min portfolio og der ud fra lavet min PBS. I min PBS har jeg fokuseret på at kategorisere alle de produkter, jeg synes var nødvendige, at have med i min portfolio for at komme i mål med projektet.</p>
+			</div>
+			
+		
+			<div class="wbs">
+				<h3>WBS</h3>
+					<p>Jeg har brugt Work Breakdown Structure (WBS) til at nedbryde mit projekt/min portfolio i mindre komponenter, hvilket har været rigtig brugbart, idet de elementer jeg har skulle lave er blevet mere håndterbare. Jeg har "nedbrudt" min portfolio i mindre dele og grupperet dem i et logisk hiearki således at det indeholder 100% af det arbejde der ligger i min portfolio. Der ud over har jeg givet min WBS en nummereringsstruktur og tidsestimat. </p>
+					<img src="Flow 5/projekt-planlaegning/wbs.png" alt="WBS">
+			</div>
+
+			
+			<div class="gantt">
+				<h4>Gantt-kort</h4>
+					<p>For at nå i mål og have et nøje overblik over de forskellige elementer jeg skulle have med i min portfolio, lavede jeg et Gantt-kort. Gantt-kortet illustrerer et projekts tidsplan og gør det nemmere at have styr på hvornår og hvilke elementer der laves. Jeg brugte min WBS til at lave mit Gantt-kort, da jeg allerede i min WBS havde dannet mig et overblik over alle mine komponenter. For mit vedkommende synes jeg gantt-kortet var et godt hjælpemiddel i forhold til at holde sig inden for tidsplanen og have styr på hvor langt man var nået. Nogle af elementerne overlappede dog mere hinanden end vist på Gantt-kortet, men ellers var det et meget brugbart hjælpemiddel.</p>
+					<img src="Flow 5/projekt-planlaegning/ganttkort.png" alt="Gantt-kort">
+			</div>	
+	</div>
+		
+		
+		
+	<div class="designmanual">	
+		<h6>DESIGNMANUAL</h6>
+		
+		<h1>Logo</h1>
+		<p>Jeg vidste fra start af at jeg gerne ville have mit logo så simpelt og minimalistisk som muligt. Det skulle indeholde mit fulde navn og et "J" som initial for mit fornavn. Jeg valgte at blande den orange farve ind igen, så der var en rød tråd mellem mit logo og min portfolio.</p>
+		
+		
+		<h2>Farvevalg</h2>
+		<p>Især ét af mine farvevalg har hele tiden været klart for mig på 1. semester. Som man kan se helt tilbage fra flow 1 og flow 2 har jeg brugt farven orange i min portfolio, ligesom jeg også har gjort her i flow 5 til min endelige portfolio. Orange er en sekundærfarve, der er blandet af to primærfarver; rød og gul. Det er en meget varm farve, som vækker begejstring, glæde, virker opløftende og den tilfører på den måde mange positive energier. På den måde tilfører den orange farve min portfolio en rar og behagelig stemning, så brugeren føler sig velkommen når man er inde på min portfolio. Jeg selv vil også gerne fremstå som en tillidsfuld og overbevisende person, hvilket også er karakteristisk for den orange farve.<br>
+		Hex kode: #FFA500</p>
+		
+		
+		<h3>Typografi</h3>
+		<p>Brødtekst:<br>
+		Til alt min brødtekst har jeg valgt at bruge en sans-serif; Helvetica Neue. En sans-serif har ingen seriffer (de små fødder) eller andre dekorative elementer og er lidt mere moderne i udseendet end serif-fonterne. Helevetica Neue er en enkel og letlæselig font og egner sig derfor godt til brødtekster. Jeg lægger meget stor vægt på at det ikke skal være besværligt at læse min tekst i min portfolio, da det giver et rodet udtryk. Helvetica Neue er en af de mest brugte sans-seriffer og egner sig til det meste.<br><br>
+		Overskrifter:<br>
+		Til mine overskrifter, herunder under-overskrifter, har jeg også valgt at bruge en sans-serif; Andale Mono (monospace). Det er dog en meget anderledes sans-serif font, end den jeg har brugt i min brødtekst, da det er en monospatieret font. En monospatieret font er en font, hvis bogstaver og tegn hver har den samme vandrette afstand/bredde. Det er en font der især bruges som programmeringskode. Andale Mono giver et rustikt udtryk og er derfor en god kontrast til Helvetica Neue som jeg bruger i mine brødtekster.  
+		</p>
+		
+		
+		<h4>Billeder</h4>
+		<p>Da en stor del af min portfolio er en visuel dokumentation af mit arbejde, er billeder en vigtig del af det. Derfor har jeg billeder med i min portfolio som kan dokumentere mit arbejde og på den måde bliver det også mere spændende og interessant at navigere rundt på siden. Foruden det har jeg også et billede med af mig selv, da det er vigtigt at vise brugerne hvem der står bag portfolioen og designet, samt hvem det er man kommer i kontakt med hvis man har nogle spørgsmål eller lignende.</p>
+	</div>
+	
+		
+	
+
+	
+	<div class="footerflow5">
+		<a href="https://dk.linkedin.com/in/josefine-vihlborg-nielsen-6b512b172" target="_blank"><img src="ikoner/linkedin.png" alt="LinkedIn" class="linkedin"></a><br>
+		<img src="ikoner/kontaktikoner.png" alt="Kontakt" class="kontaktikon">
+	</div>
+	
+	
+	</div>	
+	
+</body>
+</html>
